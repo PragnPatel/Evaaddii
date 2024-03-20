@@ -1,0 +1,49 @@
+/* Default background for larger screens */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-image: url('backgroundm.png'); /* Desktop background image */
+  background-size: cover;
+  background-position: center;
+}
+
+/* Static background for mobile screens */
+@media only screen and (max-width: 767px) {
+  body {
+    background-image: url('backgroundm.png'); /* Static mobile background image */
+    background-attachment: fixed; /* Background does not scroll */
+  }
+}
+
+#message-container {
+  text-align: center;
+  padding: 50px 0; /* Adjust as needed */
+}
+
+#message-box {
+  max-width: 80%;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+  border-radius: 10px;
+  padding: 20px;
+}
+
+#button-container {
+  text-align: center;
+  margin-top: 20px; /* Adjust as needed */
+}
+
+button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff7b85; /* Romantic button color */
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e74c60; /* Darker color on hover */
+}
